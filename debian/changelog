@@ -1,0 +1,70 @@
+ruby-rails-dom-testing (2.0.3-4) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>  Fri, 15 Jul 2022 10:58:23 +0800
+
+ruby-rails-dom-testing (2.0.3-4) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+  * Update watch file format version to 4.
+  * Update standards version to 4.5.0, no changes needed.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on ruby-activesupport,
+      ruby-nokogiri and ruby-rails-deprecated-sanitizer.
+    + ruby-rails-dom-testing: Drop versioned constraint on ruby-activesupport,
+      ruby-nokogiri and ruby-rails-deprecated-sanitizer in Depends.
+
+  [ Pirate Praveen ]
+  * Bump Standards-Version to 4.6.0 (no changes needed)
+  * Switch to gem-install layout for `bundle install --local` compat
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 23 Jan 2022 12:46:51 +0530
+
+ruby-rails-dom-testing (2.0.3-3) unstable; urgency=medium
+
+  * Re-upload to unstable
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+
+ -- Sruthi Chandran <srud@disroot.org>  Thu, 03 Jan 2019 22:12:08 +0530
+
+ruby-rails-dom-testing (2.0.3-2) experimental; urgency=medium
+
+  * Fix activesupport dependency version
+
+ -- Sruthi Chandran <srud@disroot.org>  Fri, 04 May 2018 14:53:22 +0530
+
+ruby-rails-dom-testing (2.0.3-1) experimental; urgency=medium
+
+  * New upstream release
+  * Remove relax-nokogiri-dependency.patch - fixed upstream
+  * Add myself to uploaders
+  * Updated Vcs-* urls to salsa.debian.org
+  * Bump Standards-version, debhelper and compat
+
+ -- Sruthi Chandran <srud@disroot.org>  Tue, 01 May 2018 16:06:43 +0530
+
+ruby-rails-dom-testing (1.0.6-2) unstable; urgency=medium
+
+  * Team upload
+  * Relax dependency on ruby-nokogiri (Closes: #869041)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 20 Jul 2017 17:38:54 +0530
+
+ruby-rails-dom-testing (1.0.6-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Antonio Terceiro <terceiro@debian.org>  Thu, 13 Aug 2015 15:38:16 -0300

@@ -1,0 +1,31 @@
+Source: ruby-rails-dom-testing
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Build-Depends: debhelper-compat (= 12),
+               gem2deb,
+               ruby-activesupport,
+               ruby-nokogiri,
+               ruby-rails-deprecated-sanitizer
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-rails-dom-testing.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-rails-dom-testing
+Homepage: https://github.com/rails/rails-dom-testing
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-rails-dom-testing
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-activesupport,
+         ruby-nokogiri,
+         ruby-rails-deprecated-sanitizer,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: SOM and Selector assertions for Rails applications
+ This package provides test assertions for dealing with HTML content. DOM trees
+ can be tested using `assert_dom_equal` and `assert_dom_not_equal`, and HTML
+ elements can be tested using `assert_select`, `assert_select_encoded`,
+ `assert_select_email`, and selected with `css_select`.
